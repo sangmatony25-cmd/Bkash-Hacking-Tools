@@ -1,0 +1,2 @@
+rootProject.name = "Bkash-Hacking-Tools"
+include ':app'
