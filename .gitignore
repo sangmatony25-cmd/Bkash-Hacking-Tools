@@ -1,0 +1,26 @@
+# Gradle files
+.gradle/
+build/
+*.apk
+*.aab
+
+# Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+local.properties
+
+# Java
+*.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# OS
+.DS_Store
+*.swp
+*.swo
+
+# Project specific
+.env
+*.log
