@@ -7,7 +7,7 @@ android {
     compileSdk 33
     
     defaultConfig {
-        applicationId "com.example.bkashhackingtools"
+        applicationId "com.example.bkashhacktool"
         minSdk 21
         targetSdk 33
         versionCode 1
@@ -25,10 +25,23 @@ android {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
+    
+    kotlinOptions {
+        jvmTarget = '11'
+    }
 }
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    
+    // OkHttp3 for HTTP requests
+    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+    
+    // JSON parsing
+    implementation 'org.json:json:20230227'
+    
+    // Kotlin Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
 }
